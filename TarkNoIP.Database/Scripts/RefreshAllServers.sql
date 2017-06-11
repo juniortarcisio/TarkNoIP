@@ -1,0 +1,1 @@
+﻿UPDATE [server] set [LastKeepAlive] = GETDATE()

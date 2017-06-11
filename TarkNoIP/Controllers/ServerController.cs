@@ -22,7 +22,7 @@ namespace TarkNoIP.Controllers
             var addresses = torm.GetAll<Address>();
 
             var updatedServers = from server in servers
-                                 where server.LastKeepAlive > DateTime.Now.AddMinutes(-15)
+                                 where server.LastKeepAlive > DateTime.Now.AddMinutes(-120)
                                  select new UpdatedServer()
                                  {
                                      Name = server.Name,
