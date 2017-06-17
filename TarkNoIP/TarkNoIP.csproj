@@ -100,7 +100,9 @@
       <HintPath>..\..\TarkOrm.NET\TarkOrm\bin\Release\TarkOrm.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\local.pubxml" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AddressController.cs" />

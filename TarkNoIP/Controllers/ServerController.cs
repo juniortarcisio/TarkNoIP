@@ -11,9 +11,9 @@ namespace TarkNoIP.Controllers
     {
         TarkOrm.TarkOrm torm = new TarkOrm.TarkOrm("localhost");
 
-        public string Get()
+        public IEnumerable<Server> Get()
         {
-            return "abc";
+            return torm.GetAll<Server>();
         }
 
         public IEnumerable<UpdatedServer> Get(int Id)
@@ -35,10 +35,9 @@ namespace TarkNoIP.Controllers
             return updatedServers;
         }
         
-        public string Post()
+        public void Post([FromBody] Server server)
         {
-            return "abc";
-        }
-        
+
+        }        
     }
 }

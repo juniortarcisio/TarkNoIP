@@ -70,5 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\RefreshAllServers.sql" />
+    <None Include="Scripts\CheckServices.sql" />
   </ItemGroup>
 </Project>
