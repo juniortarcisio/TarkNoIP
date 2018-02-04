@@ -6,6 +6,7 @@ namespace TarkNoIP.Models
     public class Address
     {
         [Key]
+        [ReadOnly]
         public int Id { get; set; }
         
         [Column("Address")]
